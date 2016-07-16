@@ -19,3 +19,4 @@ system/ffmpeg.patch
 
 webui.patch
 system/speechd.patch
+aarch64-fix-sigsys.patch

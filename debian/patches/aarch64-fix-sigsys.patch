@@ -1,0 +1,25 @@
+Ddescription: Fix build on arm64
+Author: Riku Voipio <riku.voipio@linaro.org>
+Forwarded: https://codereview.chromium.org/2033733002/
+
+Index: chromium-browser-50.0.2661.94/mojo/shell/runner/host/linux_sandbox.cc
+===================================================================
+--- chromium-browser-50.0.2661.94.orig/mojo/shell/runner/host/linux_sandbox.cc
++++ chromium-browser-50.0.2661.94/mojo/shell/runner/host/linux_sandbox.cc
+@@ -39,12 +39,16 @@ intptr_t SandboxSIGSYSHandler(const stru
+   const sandbox::syscall_broker::BrokerProcess* broker_process =
+       static_cast<const sandbox::syscall_broker::BrokerProcess*>(aux);
+   switch (args.nr) {
++#if defined(__NR_access)
+     case __NR_access:
+       return broker_process->Access(reinterpret_cast<const char*>(args.args[0]),
+                                     static_cast<int>(args.args[1]));
++#endif
++#if defined(__NR_open)
+     case __NR_open:
+       return broker_process->Open(reinterpret_cast<const char*>(args.args[0]),
+                                   static_cast<int>(args.args[1]));
++#endif
+     case __NR_faccessat:
+       if (static_cast<int>(args.args[0]) == AT_FDCWD) {
+         return broker_process->Access(

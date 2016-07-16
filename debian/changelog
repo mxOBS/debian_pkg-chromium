@@ -1,3 +1,10 @@
+chromium-browser (51.0.2704.63-2.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Add arm64/armhf builds
+
+ -- Riku Voipio <riku.voipio@linaro.org>  Thu, 02 Jun 2016 21:20:42 +0300
+
 chromium-browser (51.0.2704.63-2) unstable; urgency=medium
 
   * Fix libspeechd build error.
