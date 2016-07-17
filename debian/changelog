@@ -1,3 +1,10 @@
+chromium-browser (51.0.2704.63-2.1+imx1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Link against Vivante GL library
+
+ -- Josua Mayer <josua.mayer97@gmail.com>  Sun, 17 Jul 2016 15:13:41 +0000
+
 chromium-browser (51.0.2704.63-2.1) unstable; urgency=medium
 
   * Non-maintainer upload.
