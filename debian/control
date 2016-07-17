@@ -27,10 +27,11 @@ Build-Depends:
  x11-apps,
  xfonts-base,
  libglewmx-dev,
- libgl1-mesa-dev,
+ libgl-dev,
+ libgl1-mesa-dri,
  libglu1-mesa-dev,
- libegl1-mesa-dev,
- libgles2-mesa-dev,
+ libegl1-dev,
+ libgles2-dev,
  mesa-common-dev,
  libgtk2.0-dev,
  libglib2.0-dev,
@@ -81,6 +82,10 @@ Build-Depends:
  libgcrypt20-dev,
  fonts-ipafont-gothic,
  fonts-ipafont-mincho,
+ imx-gpu-viv-x11,
+ imx-gpu-viv,
+ imx-gpu-viv-x11-dev,
+ imx-gpu-viv-dev,
 Standards-Version: 3.9.7
 
 Package: chromium
