@@ -18,3 +18,5 @@ debian/chromium.desktop usr/share/applications
 
 debian/apikeys etc/chromium.d
 debian/default-flags etc/chromium.d
+
+debian/yt-block-vp9.json usr/lib/chromium/policies/managed
