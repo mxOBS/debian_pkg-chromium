@@ -27,13 +27,15 @@ endif
 
 ifeq (armhf,$(DEB_HOST_ARCH))
 defines += \
+        target_arch=arm \
         arm_neon=0 \
         arm_use_neon=0 \
         v8_use_arm_eabi_hardfloat=true \
         arm_float_abi=hard \
         arm_thumb=1 \
         armv7=1 \
-        arm_version=7
+        arm_version=7 \
+        pkg-config=arm-unknown-linux-gnueabihf-pkg-config
 endif
 
 # build with gcc instead of clang
