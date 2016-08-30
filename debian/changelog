@@ -1,3 +1,10 @@
+chromium-browser (51.0.2704.63-2.1+imx2) stable; urgency=low
+
+  * Non-maintainer upload.
+  * use EGL
+
+ -- Josua Mayer <josua@.mayer97@gmail.com>  Tue, 30 Aug 2016 11:44:01 +0200
+
 chromium-browser (51.0.2704.63-2.1+imx1) unstable; urgency=medium
 
   * Non-maintainer upload.
